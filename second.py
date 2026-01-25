@@ -581,14 +581,180 @@ print(t)       """
 
 # Sort a tuple.
 
-# Concatenate two tuples.
 
+# Concatenate two tuples.
+"""s = (11,22,33,44) 
+s1 = (90,23,44,55)
+print(s + s1)"""
 # Remove duplicate elements from a tuple.
 
 # Unpack a tuple into variables.
 
+"""t = ("sudam","galande") 
+first_name,last_name = t 
+print(first_name,last_name)"""
+
 # Convert a tuple of strings into integers.
-
+"""s = ("sudam","galande") 
+print(int(s))
+"""
 # Find sum of elements in a tuple.
+"""t = (11,33,44,55,66)
+sum = 0 
+for i in t:
+    sum += i 
+print(sum) """   
+# print("hello world")
 
-print("hello world")
+"""s = {11,22,33,44}
+print(s)
+print(type(s))"""
+"""
+s = {11,22,33,44}
+s.add(90)
+print(s)"""
+
+"""s = {11,22,33,44}
+s.remove(11)
+print(s)"""
+
+"""s = {11,22,33,44}
+s.pop()
+print(s)"""
+
+"""s = {11,22,33,44}
+s.clear()
+print(s)"""
+"""
+s = {11,22,33,44}
+s1 = {11,22,77,88} 
+print("union = ",s | s1)
+print("intersection = ",s & s1) 
+print("difference = ",s - s1)"""
+
+"""d = {
+    "name" : "sudam",
+    "age":21
+}
+print(d) 
+print(type(d))"""
+
+"""d = {
+    "name" : "sudam",
+    "age":21
+}
+d["class"] = "bca"
+print(d)
+""" 
+"""d = {
+    "name" : "sudam",
+    "age":21
+}
+d["age"] = 90 
+print(d)"""
+
+"""d = {
+    "name" : "sudam",
+    "age":21
+}
+print(d)
+print(d.keys()) 
+print(d.values()) 
+print(d.items())"""
+"""
+a = 10 
+b = 10 
+print(a+b)
+print(a-b) 
+print(a*b)
+print(a/b)
+print(a == b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)"""
+"""
+import copy 
+l = [1,2,3,[4,5]] 
+shallow_copy = copy.copy(l) 
+l[3][1] = 90 
+print("shallow_copy",shallow_copy) 
+print("original = ",l)"""
+"""
+import copy 
+l = [1,2,3,[4,5]] 
+deep_copy = copy.deepcopy(l)
+print("deep_copy = ",deep_copy) 
+print("original = ",l) """
+"""
+class student:
+    def __init__(self,name):
+        self.name = name
+    def show(self):
+        print(f"name = ",self.name)  
+c = student("sudam")
+c.show()"""           
+
+# print("hello world") 
+"""a = 10
+b = 20 
+print(a+b)
+print(a-b) 
+print(a*b) 
+print(a/b)
+print(a%b)"""
+
+"""def same(word1,word2):
+    return word1.lower() == word2.lower()  
+print(same("sudam","sudam"))
+"""
+
+"""def s():
+    fact = 1 
+    n = int(input("enter a number = "))
+    for i in range(1,n+1):
+        fact = fact * i 
+    print("fact = ",fact) 
+s()     """  
+
+"""def factorial():
+    fact = 1 
+    i = 1 
+    n = int(input("enter a number = "))
+    while i<n:
+        i = i + 1
+        fact = fact * i 
+    print("factorial = ",fact)
+factorial()  """      
+"""
+n = int(input("enter a number = ")) 
+fact = 1 
+for i in n:
+    fact = fact * i 
+print("factorial = ",fact)    """
+
+
+"""def fib(n):
+    a,b = 0,1 
+    while a<n:
+        print(a,end="") 
+        a,b = b,a+b  
+fib(100)            """
+
+"""
+t = (11,22,33,44,55)
+min_val = t[0]
+max_val = t[0]
+for i in t:
+    if min_val>i:
+        min_val = i 
+    if max_val<i:
+        max_val = i 
+print("max = ",max_val)
+print("min = ",min_val)    """
+
+"""s = {1:34,2:453,3:55} 
+max = max(s,key=s.get)
+print(max)"""
+
