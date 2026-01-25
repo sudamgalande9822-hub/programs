@@ -379,3 +379,5 @@ def add(x,y):
 l = [11,22,33,44,55]
 res = reduce(add,l)
 print(res)"""
+
+print("hello world")
